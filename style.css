@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-gray: #666666;
+    --dark-blue: #42446E;
+    --text-black: #000000;
+    --linear-photo: linear-gradiant(#E70FAA, #00C0FD);
+    --text-linear: linear-gradiant(#13B0F5, #E70FAA);
+
+}
+
+body {
+    background-color: white;
+}
+
+/* NAVBAR STYLES */
+
+.navbar-text {
+    color: var(--light-gray);
+}
+
+
+/* APRESENTATION STYLES */
+
+
+
+
+/* TECH STYLES */
+
+
+
+
+/* PROJECTS STYLES */
+
+
+
+/* FOOTER STYLES */
