@@ -7,25 +7,68 @@ html, body {
     --light-gray: #666666;
     --dark-blue: #42446E;
     --text-black: #000000;
-    --linear-photo: linear-gradiant(#E70FAA, #00C0FD);
-    --text-linear: linear-gradiant(#13B0F5, #E70FAA);
+    --highlight-text: #13B0F5;
 
+    --linear-photo: linear-gradient(#E70FAA, #00C0FD);
+    --text-linear: linear-gradient(#13B0F5, #E70FAA);
 }
 
-body {
-    background-color: white;
+
+main, footer {
+    font-family: "Poppins", sans-serif;
+    background-color: white; 
 }
 
 /* NAVBAR STYLES */
 
-.navbar-text {
-    color: var(--light-gray);
+.navbar {
+    font-family: "DM Sans", sans-serif;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.nav-link {
+    color: var(--light-gray) !important;
+    font-size: 14px;
 }
 
 
-/* APRESENTATION STYLES */
+/* PRESENTATION STYLES */
 
+.presentation {
+    max-width: 1100px;
+    margin: 80px auto 0;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation h1 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: var(--dark-blue);
+
+    margin: 0;
+}
+
+.presentation .name{
+    color: var(--highlight-text);
+}
+
+.presentation img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    padding: 4px;
+
+    background: var(--linear-photo);
+}
 
 
 /* TECH STYLES */
@@ -38,3 +81,25 @@ body {
 
 
 /* FOOTER STYLES */
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .presentation {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .presentation h1 {
+        font-size: 32px;
+    }
+
+    .presentation img {
+        width: 250px;
+        height: 250px;
+    }
+}
