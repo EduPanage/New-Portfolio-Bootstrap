@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -9,14 +10,18 @@ html, body {
     --text-black: #000000;
     --highlight-text: #13B0F5;
 
-    --linear-photo: linear-gradient(#E70FAA, #00C0FD);
-    --text-linear: linear-gradient(#13B0F5, #E70FAA);
+    --metal-blue: linear-gradient(135deg,
+            #0057FF 0%,
+            #00C8FF 35%,
+            #DDE4EC 65%,
+            #7F8C9A 100%);
 }
 
 
-main, footer {
+main,
+footer {
     font-family: "Poppins", sans-serif;
-    background-color: white; 
+    background-color: white;
 }
 
 /* NAVBAR STYLES */
@@ -55,25 +60,39 @@ main, footer {
     margin: 0;
 }
 
-.presentation .name{
-    color: var(--highlight-text);
+.presentation .name {
+    background: var(--metal-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .presentation img {
     width: 350px;
     height: 350px;
     object-fit: cover;
-
     border-radius: 50%;
-    padding: 4px;
 
-    background: var(--linear-photo);
+    border: 5px solid transparent;
+    background:
+        linear-gradient(white, white) padding-box,
+        var(--metal-blue) border-box;
 }
 
 
 /* TECH STYLES */
 
+.tech{
+    margin: 8rem auto 0;
+}
 
+.tech h2 {
+    color: var(--dark-blue);
+}
+
+.tech p{
+    color: var(--light-gray);
+}
 
 
 /* PROJECTS STYLES */
