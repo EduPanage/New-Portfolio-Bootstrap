@@ -100,14 +100,6 @@ footer {
     padding: 0;
 }
 
-.tech-icons {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 45px;
-    align-items: center;
-    justify-items: center;
-}
-
 .tech-item {
     width: 80px;
     height: 80px;
