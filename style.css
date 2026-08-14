@@ -40,11 +40,13 @@ footer {
 }
 
 
+
+
 /* PRESENTATION STYLES */
 
 .presentation {
-    max-width: 1000px;
-    margin: 80px auto 0;
+    max-width: 1100px;
+    margin: 150px auto 0;
 
     display: flex;
     align-items: center;
@@ -78,6 +80,8 @@ footer {
         linear-gradient(white, white) padding-box,
         var(--metal-blue) border-box;
 }
+
+
 
 
 /* TECH STYLES */
@@ -121,11 +125,39 @@ footer {
     transform: translateY(-5px);
 }
 
+
+
+
 /* PROJECTS STYLES */
+
+.project {
+    max-width: 1100px;
+    margin: 150px auto 0;
+    text-align: center;
+}
+
+.project h2 {
+    color: var(--dark-blue);
+}
+
+.project-subtitle {
+    color: var(--light-gray);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.project .container {
+    padding: 0;
+}
+
 
 
 
 /* FOOTER STYLES */
+
+
+
+
 
 
 
