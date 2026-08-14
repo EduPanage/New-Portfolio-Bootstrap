@@ -131,9 +131,7 @@ footer {
 /* PROJECTS STYLES */
 
 .project {
-    max-width: 1100px;
-    margin: 150px auto 0;
-    text-align: center;
+    margin-top: 150px;
 }
 
 .project h2 {
@@ -150,6 +148,36 @@ footer {
     padding: 0;
 }
 
+.project-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-description{
+    text-align: justify;
+    font-weight: 300;
+    color: var(--light-gray);
+}
+
+.project-text{
+    color: var(--dark-blue);
+}
+
+.project-links a {
+    display: flex;
+    flex-direction: row;
+
+    line-height: 20px;
+    gap: 8px;
+
+    color: var(--text-black);
+
+}
 
 
 
