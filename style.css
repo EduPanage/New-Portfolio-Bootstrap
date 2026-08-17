@@ -2,6 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
+
+    min-height: 100vh;
 }
 
 :root {
@@ -27,7 +29,8 @@ footer {
 /* NAVBAR STYLES */
 
 .navbar,
-.contact {
+.contact,
+footer {
     font-family: "DM Sans", sans-serif;
 }
 
@@ -242,10 +245,38 @@ footer {
 
 /* FOOTER STYLES */
 
+footer {
+    max-width: 1100px;
+    margin: 40px auto;
+    font-size: 14px;
+}
 
+footer .footer-items {
+    list-style: none;
+}
 
+footer a {
+    display: inline-block;
+    color: var(--dark-blue);
+    text-decoration: none;
 
+    transition: transform 0.3s ease;
+}
 
+footer a:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    color: var(--light-gray);
+}
+
+footer .name {
+    background: var(--highlight-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
 
 /* MEDIA QUERIES */
@@ -319,6 +350,13 @@ footer {
 
     .align-items-baseline {
         align-items: center !important;
+    }
+
+    footer > .d-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
     }
 }
 
