@@ -1,0 +1,59 @@
+:root {
+    --light-gray: #666666;
+    --dark-blue: #42446E;
+    --text-black: #000000;
+    --light-text: #A7A7A7;
+    --highlight-text: #13B0F5;
+
+    --metal-blue: linear-gradient(135deg,
+            #0057FF 0%,
+            #00C8FF 35%,
+            #DDE4EC 65%,
+            #7F8C9A 100%);
+}
+
+
+/* ABOUT STYLES */
+
+.about {
+    max-width: 1100px;
+    margin: 70px auto 70px;
+}
+
+.about>.title {
+    color: var(--dark-blue);
+}
+
+.about>p {
+    color: var(--light-gray);
+    text-align: justify;
+    line-height: 26px;
+}
+
+
+/* JOBS STYLES */
+
+.jobs {
+    max-width: 1100px;
+    margin: 70px auto 70px;
+}
+
+.jobs>.title {
+    color: var(--dark-blue);
+}
+
+.job-container h3 {
+    color: var(--light-gray);
+}
+
+.job-container  > .d-flex > a,  p{
+    color: var(--light-text);
+}
+
+.job-container{
+    max-width: 900px;
+}
+
+
+
+/* EXPERIENCE STYLES */
