@@ -398,3 +398,24 @@ footer .name {
         aspect-ratio: 1;
     }
 }
+
+
+/* DARK THEME STYLES */
+
+body.dark-mode {
+    background-color: #000000 !important; 
+    color: #FFFFFF;
+}
+
+body.dark-mode main {
+    background-color: #000000;
+}
+
+body.dark-mode main h1 {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .project-card {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
