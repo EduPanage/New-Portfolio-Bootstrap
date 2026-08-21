@@ -81,9 +81,16 @@
     color: var(--light-gray);
 }
 
-.education-container  > .d-flex > a,  p{
+.education-container  > .d-flex > a,  p:last-child{
     color: var(--light-text);
+    text-decoration: none;
 }
+
+.education-container  > .d-flex > p:first-child{
+    color: var(--light-gray);
+}
+
+/* Hover color: #212529 */
 
 .education-container{
     max-width: 900px;
