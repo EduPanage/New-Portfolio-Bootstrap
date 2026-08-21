@@ -17,7 +17,7 @@
 
 .about {
     max-width: 1100px;
-    margin: 70px auto 70px;
+    margin: 70px auto;
 }
 
 .about>.title {
@@ -35,65 +35,89 @@
 
 .jobs {
     max-width: 1100px;
-    margin: 70px auto 70px;
+    margin: 70px auto;
 }
 
 .jobs>.title {
     color: var(--dark-blue);
 }
 
-.job-container h3 {
-    color: var(--light-gray);
-}
-
-.job-container  > .d-flex > a,  p{
-    color: var(--light-text);
-}
-
-.job-container{
+.job-container {
     max-width: 900px;
+    padding: 0 0 25px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.job-container h3 {
+    margin: 0;
+
+    color: var(--light-gray);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.job-info {
+    margin-top: 10px;
+}
+
+.job-info a,
+.job-info p {
+    margin: 0;
+
+    color: var(--light-text);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.job-info i {
+    margin-right: 5px;
+}
+
+.job-date {
+    white-space: nowrap;
 }
 
 .job-type {
     padding: 0.5rem 1.8rem;
 
-    text-decoration: none;
     color: #018C0F;
+    font-size: 12px;
+    font-weight: 500;
 
-    border: transparent;
     background-color: #D7FFE0;
     border-radius: 2rem;
+
+    text-decoration: none;
 }
 
 
-/* EXPERIENCE STYLES */
+/* EDUCATION STYLES */
 
 .education {
     max-width: 1100px;
-    margin: 70px auto 70px;
+    margin: 70px auto;
 }
 
 .education>.title {
     color: var(--dark-blue);
 }
 
+.education-container {
+    max-width: 900px;
+}
+
 .education-container h3 {
     color: var(--light-gray);
 }
 
-.education-container  > .d-flex > a,  p:last-child{
+.education-container>.d-flex>a,
+.education-container p:last-child {
     color: var(--light-text);
     text-decoration: none;
 }
 
-.education-container  > .d-flex > p:first-child{
+.education-container>.d-flex>p:first-child {
     color: var(--light-gray);
-}
-
-/* Hover color: #212529 */
-
-.education-container{
-    max-width: 900px;
 }
 
 .education-type {
@@ -105,4 +129,37 @@
     border: transparent;
     background-color: #D7FFE0;
     border-radius: 2rem;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    .jobs {
+        padding: 0 20px;
+    }
+
+    .job-container {
+        width: 100%;
+    }
+
+    .job-container>.d-flex:first-child {
+        gap: 15px;
+    }
+
+    .job-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .job-info>.d-flex {
+        flex-wrap: wrap;
+        gap: 10px !important;
+    }
+
+    .job-date {
+        white-space: normal;
+    }
 }
