@@ -1,0 +1,17 @@
+.tech-presentation {
+    max-width: 1100px;
+    margin: 70px auto;
+}
+
+.tech-presentation>.title {
+    color: var(--dark-blue);
+}
+
+.tech-presentation p {
+    color: var(--light-gray);
+}
+
+.stack-container{
+    max-width: 500px;
+    margin: 70px auto;
+}
