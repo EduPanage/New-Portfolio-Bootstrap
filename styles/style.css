@@ -305,6 +305,44 @@ footer .name {
 }
 
 
+/* HOVERS */
+
+/* Presentation H1 Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.presentation h1 {
+    animation: fadeInLeft 0.8s ease forwards;
+}
+
+
+/* Presentation Img Animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.presentation img {
+    animation: fadeInRight 0.8s ease forwards;
+}
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 850px) {
