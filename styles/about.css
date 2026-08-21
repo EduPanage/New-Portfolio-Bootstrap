@@ -67,3 +67,35 @@
 
 
 /* EXPERIENCE STYLES */
+
+.education {
+    max-width: 1100px;
+    margin: 70px auto 70px;
+}
+
+.education>.title {
+    color: var(--dark-blue);
+}
+
+.education-container h3 {
+    color: var(--light-gray);
+}
+
+.education-container  > .d-flex > a,  p{
+    color: var(--light-text);
+}
+
+.education-container{
+    max-width: 900px;
+}
+
+.education-type {
+    padding: 0.5rem 1.8rem;
+
+    text-decoration: none;
+    color: #018C0F;
+
+    border: transparent;
+    background-color: #D7FFE0;
+    border-radius: 2rem;
+}
