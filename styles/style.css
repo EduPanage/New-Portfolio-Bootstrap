@@ -63,7 +63,15 @@ footer {
     width: 100%;
 }
 
+/* THEME BUTTON */
 
+.form-check-input:checked {
+    border-color: transparent;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
 
 /* PRESENTATION STYLES */
 
@@ -371,6 +379,11 @@ footer .name {
 /* MEDIA QUERIES */
 
 @media (max-width: 850px) {
+
+    .nav-link {
+        font-size: 18px;
+    }
+
     .presentation {
         flex-direction: column;
         text-align: center;

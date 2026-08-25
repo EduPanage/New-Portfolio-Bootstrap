@@ -74,6 +74,7 @@ main {
 
 .progress-bar {
     padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
 
     background: var(--metal-blue);
 
@@ -103,5 +104,9 @@ main {
 
     .stack-header {
         flex-direction: column;
+    }
+
+    .progress-bar {
+        color: transparent;
     }
 }
