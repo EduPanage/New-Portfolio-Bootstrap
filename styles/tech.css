@@ -11,7 +11,66 @@
     color: var(--light-gray);
 }
 
-.stack-container{
-    max-width: 500px;
-    margin: 70px auto;
+
+/* TECH STACK STYLES */
+
+
+.stack {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tech-item {
+    margin-bottom: 35px;
+}
+
+.tech-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.tech-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+.tech-name img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.tech-level {
+    color: var(--light-text);
+    font-size: 13px;
+}
+
+
+/* PROGRESS BAR */
+
+.progress {
+    height: 12px;
+
+    background-color: #E9ECEF;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: var(--metal-blue);
+
+    border-radius: 10px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    transition: width 1s ease;
 }
