@@ -22,10 +22,36 @@ main {
 /* PROJECTS STYLES  */
 
 .project {
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 
+.project-button {
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
 
-.project-presentation > p {
-    margin-bottom: 0;
+    padding: 10px 28px;
+
+    color: var(--dark-blue);
+    background-color: transparent;
+
+    border: 1px solid var(--dark-blue);
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-button:hover {
+    color: rgb(89, 89, 112);
+    background: var(--metal-blue);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 15px rgba(0, 87, 255, 0.2);
 }
