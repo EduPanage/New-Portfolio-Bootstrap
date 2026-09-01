@@ -38,12 +38,12 @@ body.dark-theme {
   --border-color: #333333;
   --bs-body-color: #FFFFFF !important;
   --nav-text: #FFFF;
+  --bs-body-bg: rgb(47, 47, 47);
 
   .navbar-toggler {
     background-color: #FFFF;
   }
 
-  
 }
 
 body {
