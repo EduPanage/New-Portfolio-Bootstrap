@@ -1,383 +1,503 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="../assets/favicon.png">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/tech.css">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/tech.css" />
     <title>Portfolio | Tech Stack</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <nav class="navbar-expand-lg navbar bg-body mb-5">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="../assets/Logo.png" alt="Eduardo Panage Logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/Logo.png"
-                                    alt="Serenatto's smaller logo" style="max-width: 70px;"></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body fs-6 navbar-text">
-                            <ul class="navbar-nav justify-content-center flex-grow-1 mx-auto">
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link navbar-text " aria-current="page" href="../index.html">Home</a>
-                                </li>
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link navbar-text" href="about.html">About</a>
-                                </li>
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link" href="tech.html">Tech Stack</a>
-                                </li>
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link" href="project.html">Projects</a>
-                                </li>
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                            <ul class="navbar-nav justify-content-end">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" value="" id="darktheme"
-                                                switch>
-                                            <label class="form-check-label" for="darktheme">
-                                                Dark Mode
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div>
+        <nav class="navbar-expand-lg navbar mb-5">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="../assets/Logo.png" alt="Eduardo Panage Logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img
+                    src="../assets/Logo.png"
+                    alt="Serenatto's smaller logo"
+                    style="max-width: 70px"
+                  />
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body fs-6 navbar-text">
+                <ul
+                  class="navbar-nav justify-content-center flex-grow-1 mx-auto"
+                >
+                  <li class="nav-item mx-4">
+                    <a
+                      class="nav-link navbar-text"
+                      aria-current="page"
+                      href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link navbar-text" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="tech.html">Tech Stack</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="project.html">Projects</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="darktheme"
+                          switch
+                        />
+                        <label class="form-check-label" for="darktheme">
+                          Dark Mode
+                        </label>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-        <!------------------------------------------- TECH PRESENTATION SECTION ------------------------------>
-        <section class="tech-presentation d-flex flex-column gap-1">
-            <h1 class="title">My Tech Stack</h1>
-            <p>Technologies I've been working or styding with recently</p>
-        </section>
+      <!------------------------------------------- TECH PRESENTATION SECTION ------------------------------>
+      <section class="tech-presentation d-flex flex-column gap-1">
+        <h1 class="title">My Tech Stack</h1>
+        <p>Technologies I've been working or styding with recently</p>
+      </section>
 
-        <!------------------------------------------- STACK SECTION ------------------------------>
+      <!------------------------------------------- STACK SECTION ------------------------------>
 
-        <section class="stack my-5">
-
-            <!---------------- HTML ---------------->
-            <div class="stack-item">
-
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Html-5.png" alt="HTML5 Icon">
-                        <span>HTML5</span>
-                    </div>
-
-                    <span class="stack-level">Advanced</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Advanced
-                    </div>
-                </div>
-
+      <section class="stack my-5">
+        <!---------------- HTML ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/Html-5.png"
+                alt="HTML5 Icon"
+              />
+              <span>HTML5</span>
             </div>
 
+            <span class="stack-level">Advanced</span>
+          </div>
 
-            <!---------------- CSS ---------------->
-            <div class="stack-item">
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Advanced
+            </div>
+          </div>
+        </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Css-3.png" alt="CSS3 Icon">
-                        <span>CSS3</span>
-                    </div>
-
-                    <span class="stack-level">Advanced</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Advanced
-                    </div>
-                </div>
-
+        <!---------------- CSS ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img src="../assets/icons/tech-icons/Css-3.png" alt="CSS3 Icon" />
+              <span>CSS3</span>
             </div>
 
+            <span class="stack-level">Advanced</span>
+          </div>
 
-            <!---------------- JAVASCRIPT ---------------->
-            <div class="stack-item">
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 78%"
+              aria-valuenow="78"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Advanced
+            </div>
+          </div>
+        </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/JS.png" alt="JavaScript Icon">
-                        <span>JavaScript</span>
-                    </div>
-
-                    <span class="stack-level">Intermediate</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Intermediate
-                    </div>
-                </div>
-
+        <!---------------- JAVASCRIPT ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/JS.png"
+                alt="JavaScript Icon"
+              />
+              <span>JavaScript</span>
             </div>
 
-            <!---------------- JQUERY ---------------->
-            <div class="stack-item">
+            <span class="stack-level">Intermediate</span>
+          </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/jQuery.png" alt="JavaScript Icon">
-                        <span>JQuery</span>
-                    </div>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 60%"
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Intermediate
+            </div>
+          </div>
+        </div>
 
-                    <span class="stack-level">Intermediate</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Intermediate
-                    </div>
-                </div>
-
+        <!---------------- JQUERY ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/jQuery.png"
+                alt="JavaScript Icon"
+              />
+              <span>JQuery</span>
             </div>
 
+            <span class="stack-level">Intermediate</span>
+          </div>
 
-            <!---------------- BOOTSTRAP ---------------->
-            <div class="stack-item">
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Intermediate
+            </div>
+          </div>
+        </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Bootstrap.png" alt="Bootstrap Icon">
-                        <span>Bootstrap</span>
-                    </div>
-
-                    <span class="stack-level">Intermediate</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Intermediate
-                    </div>
-                </div>
-
+        <!---------------- BOOTSTRAP ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/Bootstrap.png"
+                alt="Bootstrap Icon"
+              />
+              <span>Bootstrap</span>
             </div>
 
+            <span class="stack-level">Intermediate</span>
+          </div>
 
-            <!---------------- PYTHON ---------------->
-            <div class="stack-item">
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="80"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Intermediate
+            </div>
+          </div>
+        </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Python.png" alt="Python Icon">
-                        <span>Python</span>
-                    </div>
-
-                    <span class="stack-level">Intermediate</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Intermediate
-                    </div>
-                </div>
-
+        <!---------------- PYTHON ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/Python.png"
+                alt="Python Icon"
+              />
+              <span>Python</span>
             </div>
 
-            <!---------------- DJANGO ---------------->
-            <div class="stack-item">
+            <span class="stack-level">Intermediate</span>
+          </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Django.png" alt="Python Icon">
-                        <span>Django</span>
-                    </div>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 55%"
+              aria-valuenow="55"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Intermediate
+            </div>
+          </div>
+        </div>
 
-                    <span class="stack-level">Basic</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Basic
-                    </div>
-                </div>
-
+        <!---------------- DJANGO ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/Django.png"
+                alt="Python Icon"
+              />
+              <span>Django</span>
             </div>
 
-            <!---------------- FLASK ---------------->
-            <div class="stack-item">
+            <span class="stack-level">Basic</span>
+          </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Flask.png" alt="Python Icon">
-                        <span>Flask</span>
-                    </div>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 20%"
+              aria-valuenow="20"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Basic
+            </div>
+          </div>
+        </div>
 
-                    <span class="stack-level">Basic</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Basic
-                    </div>
-                </div>
-
+        <!---------------- FLASK ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/Flask.png"
+                alt="Python Icon"
+              />
+              <span>Flask</span>
             </div>
 
-            <!---------------- POSTGRESQL ---------------->
-            <div class="stack-item">
+            <span class="stack-level">Basic</span>
+          </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Postgre.png" alt="PostgreSQL Icon">
-                        <span>PostgreSQL</span>
-                    </div>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 15%"
+              aria-valuenow="15"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Basic
+            </div>
+          </div>
+        </div>
 
-                    <span class="stack-level">Intermediate</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Intermediate
-                    </div>
-                </div>
-
+        <!---------------- POSTGRESQL ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/Postgre.png"
+                alt="PostgreSQL Icon"
+              />
+              <span>PostgreSQL</span>
             </div>
 
-            <!---------------- SQLITE ---------------->
-            <div class="stack-item">
+            <span class="stack-level">Intermediate</span>
+          </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Sqlite.png" alt="PostgreSQL Icon">
-                        <span>SQLite</span>
-                    </div>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 60%"
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Intermediate
+            </div>
+          </div>
+        </div>
 
-                    <span class="stack-level">Intermediate</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Intermediate
-                    </div>
-                </div>
-
+        <!---------------- SQLITE ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/Sqlite.png"
+                alt="PostgreSQL Icon"
+              />
+              <span>SQLite</span>
             </div>
 
+            <span class="stack-level">Intermediate</span>
+          </div>
 
-            <!---------------- GITHUB ---------------->
-            <div class="stack-item">
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Intermediate
+            </div>
+          </div>
+        </div>
 
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Github.png" alt="GitHub Icon">
-                        <span>GitHub</span>
-                    </div>
-
-                    <span class="stack-level">Advanced</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Advanced
-                    </div>
-                </div>
-
+        <!---------------- GITHUB ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/Github.png"
+                alt="GitHub Icon"
+              />
+              <span>GitHub</span>
             </div>
 
+            <span class="stack-level">Advanced</span>
+          </div>
 
-            <!---------------- DOCKER ---------------->
-            <div class="stack-item">
-
-                <div class="stack-header">
-                    <div class="stack-name">
-                        <img src="../assets/icons/tech-icons/Docker.png" alt="Docker Icon">
-                        <span>Docker</span>
-                    </div>
-
-                    <span class="stack-level">Basic</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35"
-                        aria-valuemin="0" aria-valuemax="100">
-                        Basic
-                    </div>
-                </div>
-
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 85%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Advanced
             </div>
-        </section>
-        <hr class="mx-auto" style="max-width: 1100px;">
+          </div>
+        </div>
+
+        <!---------------- DOCKER ---------------->
+        <div class="stack-item">
+          <div class="stack-header">
+            <div class="stack-name">
+              <img
+                src="../assets/icons/tech-icons/Docker.png"
+                alt="Docker Icon"
+              />
+              <span>Docker</span>
+            </div>
+
+            <span class="stack-level">Basic</span>
+          </div>
+
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 35%"
+              aria-valuenow="35"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Basic
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="mx-auto" style="max-width: 1100px" />
     </main>
     <footer>
-        <div class="d-flex justify-content-between">
-            <div class="">
-                <ul class="footer-items d-flex flex-row">
-                    <li class="mx-4">
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li class="mx-4">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li class="mx-4">
-                        <a href="stack.html">Tech Stack</a>
-                    </li>
-                    <li class="mx-4">
-                        <a href="project.html">Projects</a>
-                    </li>
-                    <li class="mx-4">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p>Built by <span class="name">EduPanage</span></p>
-            </div>
+      <div class="d-flex justify-content-between">
+        <div class="">
+          <ul class="footer-items d-flex flex-row">
+            <li class="mx-4">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="mx-4">
+              <a href="about.html">About</a>
+            </li>
+            <li class="mx-4">
+              <a href="stack.html">Tech Stack</a>
+            </li>
+            <li class="mx-4">
+              <a href="project.html">Projects</a>
+            </li>
+            <li class="mx-4">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+        <div>
+          <p>Built by <span class="name">EduPanage</span></p>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="../script.js"></script>
-</body>
-
+  </body>
 </html>

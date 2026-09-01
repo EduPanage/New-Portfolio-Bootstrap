@@ -1,470 +1,617 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-4.0.0.js"
-        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
-    <link rel="icon" href="assets/favicon.png">
-    <link rel="stylesheet" href="styles/style.css">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Portfolio | Home</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <nav class="navbar-expand-lg navbar bg-body mb-5">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="assets/Logo.png" alt="Eduardo Panage Logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/Logo.png"
-                                    alt="Serenatto's smaller logo" style="max-width: 70px;"></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body fs-6 navbar-text">
-                            <ul class="navbar-nav justify-content-center flex-grow-1 mx-auto">
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link navbar-text " aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link navbar-text" href="pages/about.html">About</a>
-                                </li>
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link" href="pages/tech.html">Tech Stack</a>
-                                </li>
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link" href="pages/project.html">Projects</a>
-                                </li>
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link" href="pages/contact.html">Contact</a>
-                                </li>
-                            </ul>
-                            <ul class="navbar-nav justify-content-end">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" value="" id="darktheme"
-                                                switch>
-                                            <label class="form-check-label" for="darktheme">
-                                                Dark Mode
-                                            </label>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div>
+        <nav class="navbar-expand-lg navbar mb-5">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="assets/Logo.png" alt="Eduardo Panage Logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img
+                    src="assets/Logo.png"
+                    alt="Serenatto's smaller logo"
+                    style="max-width: 70px"
+                  />
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body fs-6 navbar-text">
+                <ul
+                  class="navbar-nav justify-content-center flex-grow-1 mx-auto"
+                >
+                  <li class="nav-item mx-4">
+                    <a class="nav-link navbar-text" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link navbar-text" href="pages/about.html"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="pages/tech.html">Tech Stack</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="pages/project.html">Projects</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="pages/contact.html">Contact</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="darktheme"
+                          switch
+                        />
+                        <label class="form-check-label" for="darktheme">
+                          Dark Mode
+                        </label>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <!------------------------------------------- PRESENTATION SECTION ------------------------------>
+      <section class="presentation">
+        <!-------- TITLE ------->
+        <div>
+          <h1>Hello!</h1>
+          <h1>My name is</h1>
+          <h1 class="name">Eduardo Panage</h1>
+          <h1>I love programing</h1>
+        </div>
 
-        <!------------------------------------------- PRESENTATION SECTION ------------------------------>
-        <section class="presentation">
-            <!-------- TITLE ------->
-            <div>
-                <h1>Hello!</h1>
-                <h1>My name is</h1>
-                <h1 class="name">Eduardo Panage</h1>
-                <h1>I love programing</h1>
-            </div>
+        <!-------- IMAGE ------->
+        <img src="assets/Perfil.jpg" alt="Eduardo Panage" />
+      </section>
 
-            <!-------- IMAGE ------->
-            <img src="assets/Perfil.jpg" alt="Eduardo Panage">
-        </section>
+      <!------------------------------------------- TECH SECTION ------------------------------------->
+      <section class="tech">
+        <div class="text-center">
+          <h2 class="fw-bold">My Tech Stack</h2>
+          <p>Technologies I've been working with recently</p>
+        </div>
 
-        <!------------------------------------------- TECH SECTION ------------------------------------->
-        <section class="tech">
+        <div class="container my-5">
+          <div class="d-flex flex-wrap justify-content-center gap-5">
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Html-5.png"
+                alt="HTML5 Icon"
+              />
+            </a>
 
-            <div class="text-center">
-                <h2 class="fw-bold">My Tech Stack</h2>
-                <p>Technologies I've been working with recently</p>
-            </div>
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Css-3.png"
+                alt="CSS3 Icon"
+              />
+            </a>
 
-            <div class="container my-5">
-                <div class="d-flex flex-wrap justify-content-center gap-5 ">
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/JS.png"
+                alt="JavaScript Icon"
+              />
+            </a>
 
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Html-5.png" alt="HTML5 Icon">
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/jQuery.png"
+                alt="jQuery Icon"
+              />
+            </a>
+
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Bootstrap.png"
+                alt="Bootstrap Icon"
+              />
+            </a>
+
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Python.png"
+                alt="Python Icon"
+              />
+            </a>
+
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Django.png"
+                alt="Django Icon"
+              />
+            </a>
+
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Flask.png"
+                alt="Flask Icon"
+              />
+            </a>
+
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Postgre.png"
+                alt="PostgreSQL Icon"
+              />
+            </a>
+
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Github.png"
+                alt="GitHub Icon"
+              />
+            </a>
+
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Docker.png"
+                alt="Docker Icon"
+              />
+            </a>
+
+            <a class="tech-item">
+              <img
+                class="tech-img"
+                src="assets/icons/tech-icons/Trello.png"
+                alt="Trello Icon"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------- PROJECT SECTION ---------------------------------->
+      <section class="project" id="project">
+        <div class="text-center">
+          <h2 class="fw-bold">Projects</h2>
+          <p class="project-subtitle">
+            Some projects I have completed or am currently working on
+          </p>
+        </div>
+
+        <div class="container my-5">
+          <div class="row g-5">
+            <!--------- PROJECT SERENATTO -------->
+            <div class="col-12 col-md-4">
+              <div class="card project-card">
+                <img
+                  src="assets/projects/Serenatto.png"
+                  alt="Serenatto Home Page"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center mb-4">
+                    Serenatto - Café & Bistro
+                  </h5>
+
+                  <p class="card-text project-description">
+                    Landing page for a coffee shop and bistro, built using the
+                    Bootstrap framework.
+                  </p>
+
+                  <p class="project-text">
+                    Tech stack: HTML, CSS (Bootstrap) and JS.
+                  </p>
+
+                  <div class="d-flex justify-content-between project-links">
+                    <a
+                      href="https://serenatto-webpage.vercel.app/"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Chain-icon-dark.png"
+                        alt="Chain icon"
+                      />
+                      Live Preview
                     </a>
 
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Css-3.png" alt="CSS3 Icon">
+                    <a
+                      href="https://github.com/EduPanage/Serenatto-Bootstrap"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Github-icon-dark.png"
+                        alt="Github icon"
+                      />
+                      View Code
                     </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/JS.png" alt="JavaScript Icon">
-                    </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/jQuery.png" alt="jQuery Icon">
-                    </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Bootstrap.png" alt="Bootstrap Icon">
-                    </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Python.png" alt="Python Icon">
-                    </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Django.png" alt="Django Icon">
-                    </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Flask.png" alt="Flask Icon">
-                    </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Postgre.png" alt="PostgreSQL Icon">
-                    </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Github.png" alt="GitHub Icon">
-                    </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Docker.png" alt="Docker Icon">
-                    </a>
-
-                    <a class="tech-item">
-                        <img class="tech-img" src="assets/icons/tech-icons/Trello.png" alt="Trello Icon">
-                    </a>
-
+                  </div>
                 </div>
+              </div>
             </div>
 
-        </section>
-        <!------------------------------------------- PROJECT SECTION ---------------------------------->
-        <section class="project" id="project">
-
-            <div class="text-center">
-                <h2 class="fw-bold">Projects</h2>
-                <p class="project-subtitle">
-                    Some projects I have completed or am currently working on
-                </p>
-            </div>
-
-            <div class="container my-5">
-                <div class="row g-5">
-
-                    <!--------- PROJECT SERENATTO -------->
-                    <div class="col-12 col-md-4">
-                        <div class="card project-card">
-
-                            <img src="assets/projects/Serenatto.png" alt="Serenatto Home Page">
-
-                            <div class="card-body">
-
-                                <h5 class="card-title fw-bold text-center mb-4">
-                                    Serenatto - Café & Bistro
-                                </h5>
-
-                                <p class="card-text project-description">
-                                    Landing page for a coffee shop and bistro, built using the Bootstrap framework.
-                                </p>
-
-                                <p class="project-text">
-                                    Tech stack: HTML, CSS (Bootstrap) and JS.
-                                </p>
-
-                                <div class="d-flex justify-content-between project-links">
-
-                                    <a href="https://serenatto-webpage.vercel.app/" class="card-link p-1">
-                                        <img src="assets/icons/Chain-icon-dark.png" alt="Chain icon">
-                                        Live Preview
-                                    </a>
-
-                                    <a href="https://github.com/EduPanage/Serenatto-Bootstrap" class="card-link p-1">
-                                        <img src="assets/icons/Github-icon-dark.png" alt="Github icon">
-                                        View Code
-                                    </a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--------- PROJECT 2 -------->
-                    <div class="col-12 col-md-4">
-                        <div class="card project-card">
-
-                            <img src="assets/projects/Meteora.png" alt="Meteora Online Shop">
-
-                            <div class="card-body">
-
-                                <h5 class="card-title fw-bold text-center mb-4">
-                                    Meteora Shop
-                                </h5>
-
-                                <p class="card-text project-description">
-                                    Landing page for a Brazilian clothing store, built with Bootstrap.
-                                </p>
-
-                                <p class="project-text">
-                                    Tech stack: HTML and CSS (Bootstrap).
-                                </p>
-
-                                <div class="d-flex justify-content-between project-links">
-
-                                    <a href="https://edupanage.github.io/Meteora-Bootstrap/#" class="card-link p-1">
-                                        <img src="assets/icons/Chain-icon-dark.png" alt="Chain icon">
-                                        Live Preview
-                                    </a>
-
-                                    <a href="https://github.com/EduPanage/Meteora-Bootstrap" class="card-link p-1">
-                                        <img src="assets/icons/Github-icon-dark.png" alt="Github icon">
-                                        View Code
-                                    </a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--------- PROJECT 3 -------->
-                    <div class="col-12 col-md-4">
-                        <div class="card project-card">
-
-                            <img src="assets/projects/Secret Number Game.png" alt="Secret number game Start Screen">
-
-                            <div class="card-body">
-
-                                <h5 class="card-title fw-bold text-center mb-4">
-                                    Secret Number Game
-                                </h5>
-
-                                <p class="card-text project-description">
-                                    A small secret number game created to practice JS and its libraries.
-                                </p>
-
-                                <p class="project-text">
-                                    Tech stack: HTML, CSS (Vanilla) and JS.
-                                </p>
-
-                                <div class="d-flex justify-content-between project-links">
-
-                                    <a href="https://secret-number-game-js-ivory.vercel.app/" class="card-link p-1">
-                                        <img src="assets/icons/Chain-icon-dark.png" alt="Chain icon">
-                                        Live Preview
-                                    </a>
-
-                                    <a href="https://github.com/EduPanage/Secret-Number-Game-JS" class="card-link p-1">
-                                        <img src="assets/icons/Github-icon-dark.png" alt="Github icon">
-                                        View Code
-                                    </a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--------- PROJECT 4 -------->
-                    <div class="col-12 col-md-4">
-                        <div class="card project-card">
-
-                            <img src="assets/projects/Linktree.png" alt="Eduardo Panage Linktree">
-
-                            <div class="card-body">
-
-                                <h5 class="card-title fw-bold text-center mb-4">
-                                    Pleasant Linktree
-                                </h5>
-
-                                <p class="card-text project-description">
-                                    Linktree-style project featuring key social media links for a programmer's profile.
-                                </p>
-
-                                <p class="project-text">
-                                    Tech stack: HTML and CSS (Vanilla).
-                                </p>
-
-                                <div class="d-flex justify-content-between project-links">
-
-                                    <a href="https://linktree-eduardo-panage.vercel.app/" class="card-link p-1">
-                                        <img src="assets/icons/Chain-icon-dark.png" alt="Chain icon">
-                                        Live Preview
-                                    </a>
-
-                                    <a href="https://github.com/EduPanage/Linktree" class="card-link p-1">
-                                        <img src="assets/icons/Github-icon-dark.png" alt="Github icon">
-                                        View Code
-                                    </a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--------- PROJECT 5 -------->
-                    <div class="col-12 col-md-4">
-                        <div class="card project-card">
-
-                            <img src="assets/projects/Aliança de Pequenos.png" alt="">
-
-                            <div class="card-body">
-
-                                <h5 class="card-title fw-bold text-center mb-4">
-                                    Alliance of the Small
-                                </h5>
-
-                                <p class="card-text project-description">
-                                    Website developed for the missionary brazilian organization Aliança de Pequenos
-                                    (Ally).
-                                </p>
-
-                                <p class="project-text">
-                                    Tech stack: HTML and CSS (Vanilla).
-                                </p>
-
-                                <div class="d-flex justify-content-between project-links">
-
-                                    <a href="https://site-alianca-de-pequenos.vercel.app/" class="card-link p-1">
-                                        <img src="assets/icons/Chain-icon-dark.png" alt="Chain icon">
-                                        Live Preview
-                                    </a>
-
-                                    <a href="https://github.com/EduPanage/Site-Alianca-de-Pequenos-"
-                                        class="card-link p-1">
-                                        <img src="assets/icons/Github-icon-dark.png" alt="Github icon">
-                                        View Code
-                                    </a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--------- PROJECT 6 -------->
-                    <div class="col-12 col-md-4">
-                        <div class="card project-card">
-
-                            <img src="assets/projects/Library Management .png"
-                                alt="Library Management System page from Github">
-
-                            <div class="card-body">
-
-                                <h5 class="card-title fw-bold text-center mb-4">
-                                    Library Management System
-                                </h5>
-
-                                <p class="card-text project-description">
-                                    Library management system developed in Python, using PostgreSQL to store all data.
-                                </p>
-
-                                <p class="project-text">
-                                    Tech stack: Python and PostgreSQL.
-                                </p>
-
-                                <div class="d-flex justify-content-between project-links">
-
-                                    <a href="https://github.com/EduPanage/Library-Management-System-PY"
-                                        class="card-link p-1">
-                                        <img src="assets/icons/Chain-icon-dark.png" alt="Chain icon">
-                                        Live Preview
-                                    </a>
-
-                                    <a href="https://github.com/EduPanage/Library-Management-System-PY"
-                                        class="card-link p-1">
-                                        <img src="assets/icons/Github-icon-dark.png" alt="Github icon">
-                                        View Code
-                                    </a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
+            <!--------- PROJECT 2 -------->
+            <div class="col-12 col-md-4">
+              <div class="card project-card">
+                <img
+                  src="assets/projects/Meteora.png"
+                  alt="Meteora Online Shop"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center mb-4">
+                    Meteora Shop
+                  </h5>
+
+                  <p class="card-text project-description">
+                    Landing page for a Brazilian clothing store, built with
+                    Bootstrap.
+                  </p>
+
+                  <p class="project-text">
+                    Tech stack: HTML and CSS (Bootstrap).
+                  </p>
+
+                  <div class="d-flex justify-content-between project-links">
+                    <a
+                      href="https://edupanage.github.io/Meteora-Bootstrap/#"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Chain-icon-dark.png"
+                        alt="Chain icon"
+                      />
+                      Live Preview
+                    </a>
+
+                    <a
+                      href="https://github.com/EduPanage/Meteora-Bootstrap"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Github-icon-dark.png"
+                        alt="Github icon"
+                      />
+                      View Code
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
 
-        </section>
+            <!--------- PROJECT 3 -------->
+            <div class="col-12 col-md-4">
+              <div class="card project-card">
+                <img
+                  src="assets/projects/Secret Number Game.png"
+                  alt="Secret number game Start Screen"
+                />
 
-        <!------------------------------------------- CONTACT SECTION ---------------------------------->
-        <section class="contact">
-            <div class="d-flex justify-content-between">
-                <img src="assets/Logo.png" alt="Eduardo Panage Logo">
-                <div class="d-flex gap-5 align-items-baseline">
-                    <p>(67)99668-7261</p>
-                    <p>edupanage.dev@gmail.com</p>
-                    <div class="icon-link lh-1 gap-3">
-                        <a href="https://api.whatsapp.com/send/?phone=67996687261&text&type=phone_number&app_absent=0"><i class="bi bi-whatsapp fs-5"></i></a>
-                        <a href="https://github.com/EduPanage?tab=overview&from=2026-08-01&to=2026-08-25"><i class="bi bi-github fs-5"></i></a>
-                        <a href="https://www.instagram.com/eduardopanage_/"><i class="bi bi-instagram fs-5"></i></a>
-                        <a href="https://www.linkedin.com/in/eduardo-panage-avila/"><i class="bi bi-linkedin fs-5"></i></a>
-                    </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center mb-4">
+                    Secret Number Game
+                  </h5>
+
+                  <p class="card-text project-description">
+                    A small secret number game created to practice JS and its
+                    libraries.
+                  </p>
+
+                  <p class="project-text">
+                    Tech stack: HTML, CSS (Vanilla) and JS.
+                  </p>
+
+                  <div class="d-flex justify-content-between project-links">
+                    <a
+                      href="https://secret-number-game-js-ivory.vercel.app/"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Chain-icon-dark.png"
+                        alt="Chain icon"
+                      />
+                      Live Preview
+                    </a>
+
+                    <a
+                      href="https://github.com/EduPanage/Secret-Number-Game-JS"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Github-icon-dark.png"
+                        alt="Github icon"
+                      />
+                      View Code
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <hr class="mx-auto" style="max-width: 1100px;">
+            <!--------- PROJECT 4 -------->
+            <div class="col-12 col-md-4">
+              <div class="card project-card">
+                <img
+                  src="assets/projects/Linktree.png"
+                  alt="Eduardo Panage Linktree"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center mb-4">
+                    Pleasant Linktree
+                  </h5>
+
+                  <p class="card-text project-description">
+                    Linktree-style project featuring key social media links for
+                    a programmer's profile.
+                  </p>
+
+                  <p class="project-text">
+                    Tech stack: HTML and CSS (Vanilla).
+                  </p>
+
+                  <div class="d-flex justify-content-between project-links">
+                    <a
+                      href="https://linktree-eduardo-panage.vercel.app/"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Chain-icon-dark.png"
+                        alt="Chain icon"
+                      />
+                      Live Preview
+                    </a>
+
+                    <a
+                      href="https://github.com/EduPanage/Linktree"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Github-icon-dark.png"
+                        alt="Github icon"
+                      />
+                      View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--------- PROJECT 5 -------->
+            <div class="col-12 col-md-4">
+              <div class="card project-card">
+                <img src="assets/projects/Aliança de Pequenos.png" alt="" />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center mb-4">
+                    Alliance of the Small
+                  </h5>
+
+                  <p class="card-text project-description">
+                    Website developed for the missionary brazilian organization
+                    Aliança de Pequenos (Ally).
+                  </p>
+
+                  <p class="project-text">
+                    Tech stack: HTML and CSS (Vanilla).
+                  </p>
+
+                  <div class="d-flex justify-content-between project-links">
+                    <a
+                      href="https://site-alianca-de-pequenos.vercel.app/"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Chain-icon-dark.png"
+                        alt="Chain icon"
+                      />
+                      Live Preview
+                    </a>
+
+                    <a
+                      href="https://github.com/EduPanage/Site-Alianca-de-Pequenos-"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Github-icon-dark.png"
+                        alt="Github icon"
+                      />
+                      View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--------- PROJECT 6 -------->
+            <div class="col-12 col-md-4">
+              <div class="card project-card">
+                <img
+                  src="assets/projects/Library Management .png"
+                  alt="Library Management System page from Github"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center mb-4">
+                    Library Management System
+                  </h5>
+
+                  <p class="card-text project-description">
+                    Library management system developed in Python, using
+                    PostgreSQL to store all data.
+                  </p>
+
+                  <p class="project-text">Tech stack: Python and PostgreSQL.</p>
+
+                  <div class="d-flex justify-content-between project-links">
+                    <a
+                      href="https://github.com/EduPanage/Library-Management-System-PY"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Chain-icon-dark.png"
+                        alt="Chain icon"
+                      />
+                      Live Preview
+                    </a>
+
+                    <a
+                      href="https://github.com/EduPanage/Library-Management-System-PY"
+                      class="card-link p-1"
+                    >
+                      <img
+                        src="assets/icons/Github-icon-dark.png"
+                        alt="Github icon"
+                      />
+                      View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------------------- CONTACT SECTION ---------------------------------->
+      <section class="contact">
+        <div class="d-flex justify-content-between">
+          <img src="assets/Logo.png" alt="Eduardo Panage Logo" />
+          <div class="d-flex gap-5 align-items-baseline">
+            <p>(67)99668-7261</p>
+            <p>edupanage.dev@gmail.com</p>
+            <div class="icon-link lh-1 gap-3">
+              <a
+                href="https://api.whatsapp.com/send/?phone=67996687261&text&type=phone_number&app_absent=0"
+                ><i class="bi bi-whatsapp fs-5"></i
+              ></a>
+              <a
+                href="https://github.com/EduPanage?tab=overview&from=2026-08-01&to=2026-08-25"
+                ><i class="bi bi-github fs-5"></i
+              ></a>
+              <a href="https://www.instagram.com/eduardopanage_/"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/eduardo-panage-avila/"
+                ><i class="bi bi-linkedin fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="mx-auto" style="max-width: 1100px" />
     </main>
 
     <footer>
-        <div class="d-flex justify-content-between">
-            <div class="">
-                <ul class="footer-items d-flex flex-row">
-                    <li class="mx-4">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="mx-4">
-                        <a href="pages/about.html">About</a>
-                    </li>
-                    <li class="mx-4">
-                        <a href="pages/tech.html">Tech Stack</a>
-                    </li>
-                    <li class="mx-4">
-                        <a href="pages/project.html">Projects</a>
-                    </li>
-                    <li class="mx-4">
-                        <a href="pages/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p>Built by <span class="name">EduPanage</span></p>
-            </div>
+      <div class="d-flex justify-content-between">
+        <div class="">
+          <ul class="footer-items d-flex flex-row">
+            <li class="mx-4">
+              <a href="#">Home</a>
+            </li>
+            <li class="mx-4">
+              <a href="pages/about.html">About</a>
+            </li>
+            <li class="mx-4">
+              <a href="pages/tech.html">Tech Stack</a>
+            </li>
+            <li class="mx-4">
+              <a href="pages/project.html">Projects</a>
+            </li>
+            <li class="mx-4">
+              <a href="pages/contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+        <div>
+          <p>Built by <span class="name">EduPanage</span></p>
+        </div>
+      </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
