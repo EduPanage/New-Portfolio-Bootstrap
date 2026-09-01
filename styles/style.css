@@ -14,6 +14,7 @@ body {
   --text-black: #000000;
   --light-text: #3c3c3c;
   --highlight-text: #13b0f5;
+  --nav-text: #3c3c3c;
 
   --border-color: #e5e5e5;
 
@@ -25,6 +26,7 @@ body {
     #7f8c9a 100%
   );
 }
+
 html.dark-theme,
 body.dark-theme {
   --background: #121212;
@@ -35,6 +37,7 @@ body.dark-theme {
   --light-text: #727272;
   --border-color: #333333;
   --bs-body-color: #FFFFFF !important;
+  --nav-text: #FFFF;
 
   .navbar-toggler {
     background-color: #FFFF;
@@ -83,7 +86,7 @@ footer {
 }
 
 .nav-link {
-  color: var(--light-gray) !important;
+  color: var(--nav-text) !important;
   font-size: 14px;
 
   position: relative;
