@@ -1,11 +1,22 @@
 $(document).ready(() => {
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        $('body').addClass('dark-theme');
+        $('#darktheme').prop('checked', true);
+    }
+
     $('#darktheme').change(function() {
-        // Verifica se o checkbox do switch está marcado
+
         if ($(this).is(':checked')) {
             $('body').addClass('dark-theme');
+            localStorage.setItem("theme", "dark");
         } else {
             $('body').removeClass('dark-theme');
+            localStorage.setItem("theme", "light");
         }
-    });
-});
 
+    });
+
+});

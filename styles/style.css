@@ -25,16 +25,22 @@ body {
     #7f8c9a 100%
   );
 }
-
+html.dark-theme,
 body.dark-theme {
   --background: #121212;
   --surface: #1c1c1c;
-  --light-gray: #b8b8b8;
+  --light-gray: #787878;
   --dark-blue: #e6e6e6;
   --text-black: #ffffff;
   --light-text: #727272;
   --border-color: #333333;
   --bs-body-color: #FFFFFF !important;
+
+  .navbar-toggler {
+    background-color: #FFFF;
+  }
+
+  
 }
 
 body {
