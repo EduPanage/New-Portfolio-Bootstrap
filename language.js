@@ -285,6 +285,8 @@ const translationsProject = {
 
     libraryDescription:
       "Library management system developed in Python, using PostgreSQL to store all data.",
+    
+    seeMore: "See More",
 
     builtBy: "Built by",
   },
@@ -333,6 +335,8 @@ const translationsProject = {
     libraryDescription:
       "Sistema de gerenciamento de biblioteca desenvolvido em Python, utilizando PostgreSQL para armazenar todos os dados.",
 
+    seeMore: "Ver Mais",
+    
     builtBy: "Desenvolvido por",
   },
 };

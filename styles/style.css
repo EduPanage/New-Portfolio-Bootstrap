@@ -15,6 +15,7 @@ body {
   --light-text: #3c3c3c;
   --highlight-text: #13b0f5;
   --nav-text: #3c3c3c;
+  --bs-body-color: #3c3c3c;
 
   --border-color: #e5e5e5;
 
@@ -36,14 +37,13 @@ body.dark-theme {
   --text-black: #ffffff;
   --light-text: #727272;
   --border-color: #333333;
-  --bs-body-color: #FFFFFF !important;
-  --nav-text: #FFFF;
+  --bs-body-color: #ffffff !important;
+  --nav-text: #ffff;
   --bs-body-bg: rgb(47, 47, 47);
 
   .navbar-toggler {
-    background-color: #FFFF;
+    background-color: #ffff;
   }
-
 }
 
 body {
@@ -118,6 +118,14 @@ footer {
 
 .form-check-input:focus {
   box-shadow: none;
+}
+
+.btn.dropdown-toggle {
+   margin-bottom: 0.125rem;
+}
+
+#current-language {
+  font-size: 14px;
 }
 
 /* PRESENTATION STYLES */
