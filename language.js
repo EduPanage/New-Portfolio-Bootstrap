@@ -18,6 +18,36 @@ const translationsHome = {
     projectsDescription:
       "Some projects I have completed or am currently working on",
 
+    serenattoTitle: "Serenatto - Café & Bistro",
+
+    serenattoDescription:
+      "Landing page for a coffee shop and bistro, built using the Bootstrap framework.",
+
+    meteoraTitle: "Meteora Shop",
+
+    meteoraDescription:
+      "Landing page for a Brazilian clothing store, built with Bootstrap.",
+
+    secretNumberTitle: "Secret Number Game",
+
+    secretNumberDescription:
+      "A small secret number game created to practice JS and its libraries.",
+
+    linktreeTitle: "Pleasant Linktree",
+
+    pleasantLinktreeDescription:
+      "Linktree-style project featuring key social media links for a programmer's profile.",
+
+    allianceTitle: "Alliance of the Small",
+
+    allianceOfSmall:
+      "Website developed for the missionary brazilian organization Aliança de Pequenos (Ally).",
+
+    libraryTitle: "Library Management System",
+
+    libraryDescription:
+      "Library management system developed in Python, using PostgreSQL to store all data.",
+
     contactPhone: "(67)99668-7261",
     contactEmail: "edupanage.dev@gmail.com",
 
@@ -36,12 +66,42 @@ const translationsHome = {
     myNameIs: "Meu nome é",
     programming: "Eu amo programar",
 
-    myTechStack: "Minhas Tecnologias",
+    myTechStack: "Meu Tech Stack",
     techDescription: "Tecnologias com as quais tenho trabalhado recentemente",
 
     projectsTitle: "Projetos",
     projectsDescription:
       "Alguns projetos que concluí ou nos quais estou trabalhando atualmente",
+
+    serenattoTitle: "Serenatto - Café & Bistrô",
+
+    serenattoDescription:
+      "Landing page para uma cafeteria e bistrô, desenvolvida utilizando o framework Bootstrap.",
+
+    meteoraTitle: "Meteora Loja",
+
+    meteoraDescription:
+      "Landing page para uma loja de roupas brasileira, desenvolvida com Bootstrap.",
+
+    secretNumberTitle: "Jogo do Número Secreto",
+
+    secretNumberDescription:
+      "Um pequeno jogo de número secreto criado para praticar JavaScript e suas bibliotecas.",
+
+    linktreeTitle: "Linktree",
+
+    pleasantLinktreeDescription:
+      "Projeto no estilo Linktree com os principais links de redes sociais de um perfil de programador.",
+
+    allianceTitle: "Aliança de Pequenos",
+
+    allianceOfSmall:
+      "Site desenvolvido para a organização missionária brasileira Aliança de Pequenos (Ally).",
+
+    libraryTitle: "Sistema de Gerenciamento de Biblioteca",
+
+    libraryDescription:
+      "Sistema de gerenciamento de biblioteca desenvolvido em Python, utilizando PostgreSQL para armazenar todos os dados.",
 
     contactPhone: "(67)99668-7261",
     contactEmail: "edupanage.dev@gmail.com",
@@ -194,22 +254,34 @@ const translationsProject = {
     projectsDescription:
       "Some projects I have completed or am currently working on",
 
-    livePreview: "Live Preview",
-    viewCode: "View Code",
-
     techStackLabel: "Tech stack:",
+
+    serenattoTitle: "Serenatto - Café & Bistro",
 
     serenattoDescription:
       "Landing page for a coffee shop and bistro, built using the Bootstrap framework.",
 
+    meteoraTitle: "Meteora Shop",
+
     meteoraDescription:
       "Landing page for a Brazilian clothing store, built with Bootstrap.",
+
+    secretNumberTitle: "Secret Number Game",
 
     secretNumberDescription:
       "A small secret number game created to practice JS and its libraries.",
 
+    linktreeTitle: "Pleasant Linktree",
+
     pleasantLinktreeDescription:
       "Linktree-style project featuring key social media links for a programmer's profile.",
+
+    allianceTitle: "Alliance of the Small",
+
+    allianceOfSmall:
+      "Website developed for the missionary brazilian organization Aliança de Pequenos (Ally).",
+
+    libraryTitle: "Library Management System",
 
     libraryDescription:
       "Library management system developed in Python, using PostgreSQL to store all data.",
@@ -229,22 +301,34 @@ const translationsProject = {
     projectsDescription:
       "Alguns projetos que concluí ou nos quais estou trabalhando atualmente",
 
-    livePreview: "Visualização",
-    viewCode: "Ver Código",
-
     techStackLabel: "Tecnologias:",
+
+    serenattoTitle: "Serenatto - Café & Bistrô",
 
     serenattoDescription:
       "Landing page para uma cafeteria e bistrô, desenvolvida utilizando o framework Bootstrap.",
 
+    meteoraTitle: "Meteora Loja",
+
     meteoraDescription:
       "Landing page para uma loja de roupas brasileira, desenvolvida com Bootstrap.",
+
+    secretNumberTitle: "Jogo do Número Secreto",
 
     secretNumberDescription:
       "Um pequeno jogo de número secreto criado para praticar JavaScript e suas bibliotecas.",
 
+    linktreeTitle: "Linktree",
+
     pleasantLinktreeDescription:
       "Projeto no estilo Linktree com os principais links de redes sociais de um perfil de programador.",
+
+    allianceTitle: "Aliança de Pequenos",
+
+    allianceOfSmall:
+      "Site desenvolvido para a organização missionária brasileira Aliança de Pequenos (Ally).",
+
+    libraryTitle: "Sistema de Gerenciamento de Biblioteca",
 
     libraryDescription:
       "Sistema de gerenciamento de biblioteca desenvolvido em Python, utilizando PostgreSQL para armazenar todos os dados.",
@@ -262,10 +346,14 @@ const translationsContact = {
     contact: "Contact",
     darkMode: "Dark Mode",
 
-    getInTouch: "Get in Touch",
+    getInTouch: "Contact Me",
 
     contactDescription:
-      "Have a question, proposal, or just want to say hello? Feel free to send me a message.",
+      "I'm always open to discussing new projects, ideas and opportunities. If you have a project in mind or would like to connect, feel free to reach out.",
+
+    letsTalk: "Let's talk!",
+    description:
+      "I'm always open to discussing new projects, ideas and opportunities. If you have a project in mind or would like to connect, feel free to reach out.",
 
     name: "Name",
     email: "Email",
@@ -293,10 +381,14 @@ const translationsContact = {
     contact: "Contato",
     darkMode: "Modo Escuro",
 
-    getInTouch: "Entre em Contato",
+    getInTouch: "Fale Comigo",
 
     contactDescription:
-      "Tem alguma dúvida, proposta ou apenas quer dizer olá? Fique à vontade para me enviar uma mensagem.",
+      "Estou sempre aberto a discutir novos projetos, ideias e oportunidades. Se você tem um projeto em mente ou gostaria de fazer contato, fique à vontade para falar comigo.",
+
+    letsTalk: "Vamos Conversar!",
+    description:
+      "Estou sempre aberto a discutir novos projetos, ideias e oportunidades. Se você tem um projeto em mente ou gostaria de fazer contato, fique à vontade para falar comigo.",
 
     name: "Nome",
     email: "E-mail",
