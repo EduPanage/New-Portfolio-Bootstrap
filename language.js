@@ -1,375 +1,467 @@
 const translationsHome = {
   en: {
-    navHome: "Home",
-    navAbout: "About",
-    navTech: "Tech Stack",
-    navProjects: "Projects",
-    navContact: "Contact",
-
+    home: "Home",
+    about: "About",
+    techStack: "Tech Stack",
+    projects: "Projects",
+    contact: "Contact",
     darkMode: "Dark Mode",
 
-    presentationTitle: "Hi, I'm Eduardo Panage",
-    presentationDescription:
-      "A Full Stack Developer passionate about technology, problem solving and creating useful digital experiences.",
+    hello: "Hello!",
+    myNameIs: "My name is",
+    programming: "I love programing",
 
-    techTitle: "My Tech Stack",
-    techSubtitle:
-      "Technologies and tools that I use or have experience with.",
+    myTechStack: "My Tech Stack",
+    techDescription: "Technologies I've been working with recently",
 
     projectsTitle: "Projects",
-    projectsSubtitle:
-      "Some projects I have completed or am currently working on.",
+    projectsDescription:
+      "Some projects I have completed or am currently working on",
 
-    contactTitle: "Contact",
-    contactSubtitle:
-      "Feel free to get in touch with me for opportunities, questions or collaborations.",
+    contactPhone: "(67)99668-7261",
+    contactEmail: "edupanage.dev@gmail.com",
 
-    footerRights: "© 2026 Eduardo Panage. All rights reserved."
+    builtBy: "Built by",
   },
 
   pt: {
-    navHome: "Início",
-    navAbout: "Sobre",
-    navTech: "Tecnologias",
-    navProjects: "Projetos",
-    navContact: "Contato",
-
+    home: "Início",
+    about: "Sobre",
+    techStack: "Tecnologias",
+    projects: "Projetos",
+    contact: "Contato",
     darkMode: "Modo Escuro",
 
-    presentationTitle: "Olá, eu sou Eduardo Panage",
-    presentationDescription:
-      "Desenvolvedor Full Stack apaixonado por tecnologia, resolução de problemas e criação de experiências digitais úteis.",
+    hello: "Olá!",
+    myNameIs: "Meu nome é",
+    programming: "Eu amo programar",
 
-    techTitle: "Minha Tech Stack",
-    techSubtitle:
-      "Tecnologias e ferramentas que utilizo ou com as quais tenho experiência.",
+    myTechStack: "Minhas Tecnologias",
+    techDescription: "Tecnologias com as quais tenho trabalhado recentemente",
 
     projectsTitle: "Projetos",
-    projectsSubtitle:
-      "Alguns projetos que concluí ou nos quais estou trabalhando atualmente.",
+    projectsDescription:
+      "Alguns projetos que concluí ou nos quais estou trabalhando atualmente",
 
-    contactTitle: "Contato",
-    contactSubtitle:
-      "Fique à vontade para entrar em contato comigo para oportunidades, dúvidas ou colaborações.",
+    contactPhone: "(67)99668-7261",
+    contactEmail: "edupanage.dev@gmail.com",
 
-    footerRights: "© 2026 Eduardo Panage. Todos os direitos reservados."
-  }
+    builtBy: "Desenvolvido por",
+  },
 };
-
 
 const translationsAbout = {
   en: {
-    pageTitle: "About Me",
+    home: "Home",
+    about: "About",
+    techStack: "Tech Stack",
+    projects: "Projects",
+    contact: "Contact",
+    darkMode: "Dark Mode",
 
-    aboutTitle: "About Me",
+    aboutMe: "About Me",
 
-    aboutText:
-      "I'm a Full Stack Developer passionate about technology and continuous learning. I enjoy building web applications, solving problems and transforming ideas into functional digital solutions.",
+    aboutDescription:
+      "My name is Eduardo Panage Avila, and I am based in Dourados, in the state of Mato Grosso do Sul (Brazil). I hold a degree in Software Engineering and am currently specializing in Full-Stack Development. I am passionate about web programming, studying frameworks, and learning new things—such as the use of pseudo-classes, programming best practices, and various tools.",
 
-    experienceTitle: "Work Experience",
+    workExperience: "Work Experience",
 
-    job1Title: "BI Developer",
-    job1Type: "Full-time",
-    job1Company: "UEMS",
-    job1Location: "Dourados - MS",
-    job1Date: "Apr/2026 - Until now",
+    biDeveloper: "BI Developer",
+    fullStackDeveloper: "Full Stack Developer",
+    salesAssistant: "Sales Assistant I",
+    webDevelopmentIntern: "Web Development Intern",
+    youngApprentice: "Young Apprentice",
+    trainee: "Trainee",
 
-    job2Title: "Full Stack Developer",
-    job2Type: "Full-time",
-    job2Company: "None",
-    job2Location: "None",
-    job2Date: "Start Date - End Date",
+    fullTime: "Full-time",
+    halfTime: "Half-time",
 
-    job3Title: "Sales Assistant I",
-    job3Type: "Full-time",
-    job3Company: "Energisa",
-    job3Location: "Dourados - MS",
-    job3Date: "Jul/2023 - Feb/2026",
+    untilNow: "Until now",
 
-    job4Title: "Web Development Intern",
-    job4Type: "Half-time",
-    job4Company: "UEMS",
-    job4Location: "Dourados - MS",
-    job4Date: "Jul/2025 - Nov/2025",
+    education: "Education",
 
-    job5Title: "Young Apprentice",
-    job5Type: "Half-time",
-    job5Company: "Energisa",
-    job5Location: "Dourados - MS",
-    job5Date: "Mar/2022 - Mar/2023",
+    specialization: "Specialization (Lato Sensu)",
+    bachelorsDegree: "Bachelor's Degree",
+    initialContinuingTraining: "Initial and Continuing Training (FIC)",
+    w2NewEdition: "W2 New Edition",
 
-    job6Title: "Trainee",
-    job6Type: "Half-time",
-    job6Company: "MPMS",
-    job6Location: "Dourados - MS",
-    job6Date: "Jan/2020 - Dec/2020",
+    online: "Online",
+    inPerson: "In person",
 
-    educationTitle: "Education",
+    fullStackDevelopment: "Full Stack Development",
+    softwareEngineering: "Software Engineering",
+    industrialLearning: "Industrial Learning in Management",
+    basicEnglish: "Basic English (Level A1)",
 
-    education1Title: "Specialization (Lato Sensu)",
-    education1Type: "Online",
-    education1Course: "Full Stack Development",
-    education1Institution: "PUC Minas",
-    education1Location: "Belo Horizonte - MG",
-    education1Date: "Apr/2026 - Oct/2027",
-
-    education2Title: "Bachelor's Degree",
-    education2Type: "In person",
-    education2Course: "Software Engineering",
-    education2Institution: "UNIGRAN",
-    education2Location: "Dourados - MS",
-    education2Date: "Mar/2022 - Jan/2026",
-
-    education3Title: "Initial and Continuing Training (FIC)",
-    education3Type: "In person",
-    education3Course: "Industrial Learning in Management",
-    education3Institution: "SENAI",
-    education3Location: "Dourados - MS",
-    education3Date: "Start Date - End Date",
-
-    education4Title: "W2 New Edition",
-    education4Type: "Online",
-    education4Course: "Basic English (Level A1)",
-    education4Institution: "Wizard",
-    education4Location: "Dourados - MS",
-    education4Date: "Jun/2026 - Jun/2027"
+    builtBy: "Built by",
   },
 
   pt: {
-    pageTitle: "Sobre Mim",
+    home: "Início",
+    about: "Sobre",
+    techStack: "Tecnologias",
+    projects: "Projetos",
+    contact: "Contato",
+    darkMode: "Modo Escuro",
 
-    aboutTitle: "Sobre Mim",
+    aboutMe: "Sobre Mim",
 
-    aboutText:
-      "Sou Desenvolvedor Full Stack apaixonado por tecnologia e aprendizado contínuo. Gosto de desenvolver aplicações web, resolver problemas e transformar ideias em soluções digitais funcionais.",
+    aboutDescription:
+      "Meu nome é Eduardo Panage Avila e moro em Dourados, no estado de Mato Grosso do Sul (Brasil). Sou formado em Engenharia de Software e atualmente estou me especializando em Desenvolvimento Full-Stack. Sou apaixonado por programação web, estudo de frameworks e por aprender coisas novas — como o uso de pseudo-classes, boas práticas de programação e diversas ferramentas.",
 
-    experienceTitle: "Experiência Profissional",
+    workExperience: "Experiência Profissional",
 
-    job1Title: "Desenvolvedor de BI",
-    job1Type: "Tempo integral",
-    job1Company: "UEMS",
-    job1Location: "Dourados - MS",
-    job1Date: "Abr/2026 - Atualmente",
+    biDeveloper: "Desenvolvedor de BI",
+    fullStackDeveloper: "Desenvolvedor Full Stack",
+    salesAssistant: "Assistente de Vendas I",
+    webDevelopmentIntern: "Estagiário de Desenvolvimento Web",
+    youngApprentice: "Jovem Aprendiz",
+    trainee: "Trainee",
 
-    job2Title: "Desenvolvedor Full Stack",
-    job2Type: "Tempo integral",
-    job2Company: "Nenhuma",
-    job2Location: "Nenhuma",
-    job2Date: "Data de início - Data de término",
+    fullTime: "Período integral",
+    halfTime: "Meio período",
 
-    job3Title: "Assistente de Vendas I",
-    job3Type: "Tempo integral",
-    job3Company: "Energisa",
-    job3Location: "Dourados - MS",
-    job3Date: "Jul/2023 - Fev/2026",
+    untilNow: "Até o momento",
 
-    job4Title: "Estagiário de Desenvolvimento Web",
-    job4Type: "Meio período",
-    job4Company: "UEMS",
-    job4Location: "Dourados - MS",
-    job4Date: "Jul/2025 - Nov/2025",
+    education: "Formação Acadêmica",
 
-    job5Title: "Jovem Aprendiz",
-    job5Type: "Meio período",
-    job5Company: "Energisa",
-    job5Location: "Dourados - MS",
-    job5Date: "Mar/2022 - Mar/2023",
+    specialization: "Especialização (Lato Sensu)",
+    bachelorsDegree: "Graduação",
+    initialContinuingTraining: "Formação Inicial e Continuada (FIC)",
+    w2NewEdition: "W2 New Edition",
 
-    job6Title: "Trainee",
-    job6Type: "Meio período",
-    job6Company: "MPMS",
-    job6Location: "Dourados - MS",
-    job6Date: "Jan/2020 - Dez/2020",
+    online: "Online",
+    inPerson: "Presencial",
 
-    educationTitle: "Formação Acadêmica",
+    fullStackDevelopment: "Desenvolvimento Full Stack",
+    softwareEngineering: "Engenharia de Software",
+    industrialLearning: "Aprendizagem Industrial em Gestão",
+    basicEnglish: "Inglês Básico (Nível A1)",
 
-    education1Title: "Especialização (Lato Sensu)",
-    education1Type: "Online",
-    education1Course: "Desenvolvimento Full Stack",
-    education1Institution: "PUC Minas",
-    education1Location: "Belo Horizonte - MG",
-    education1Date: "Abr/2026 - Out/2027",
-
-    education2Title: "Bacharelado",
-    education2Type: "Presencial",
-    education2Course: "Engenharia de Software",
-    education2Institution: "UNIGRAN",
-    education2Location: "Dourados - MS",
-    education2Date: "Mar/2022 - Jan/2026",
-
-    education3Title: "Formação Inicial e Continuada (FIC)",
-    education3Type: "Presencial",
-    education3Course: "Aprendizagem Industrial em Gestão",
-    education3Institution: "SENAI",
-    education3Location: "Dourados - MS",
-    education3Date: "Data de início - Data de término",
-
-    education4Title: "W2 New Edition",
-    education4Type: "Online",
-    education4Course: "Inglês Básico (Nível A1)",
-    education4Institution: "Wizard",
-    education4Location: "Dourados - MS",
-    education4Date: "Jun/2026 - Jun/2027"
-  }
+    builtBy: "Desenvolvido por",
+  },
 };
-
 
 const translationsTech = {
   en: {
-    pageTitle: "Tech Stack",
-    title: "Tech Stack",
-    subtitle:
-      "Technologies, programming languages and tools that I use or have experience with.",
+    home: "Home",
+    about: "About",
+    techStack: "Tech Stack",
+    projects: "Projects",
+    contact: "Contact",
+    darkMode: "Dark Mode",
+
+    myTechStack: "My Tech Stack",
+    techDescription: "Technologies I've been working or styding with recently",
 
     advanced: "Advanced",
     intermediate: "Intermediate",
     basic: "Basic",
 
-    html: "HTML5",
-    css: "CSS3",
-    javascript: "JavaScript",
-    bootstrap: "Bootstrap",
-    python: "Python",
-    postgresql: "PostgreSQL",
-    github: "GitHub",
-    docker: "Docker"
+    builtBy: "Built by",
   },
 
   pt: {
-    pageTitle: "Tecnologias",
-    title: "Tech Stack",
-    subtitle:
-      "Tecnologias, linguagens de programação e ferramentas que utilizo ou com as quais tenho experiência.",
+    home: "Início",
+    about: "Sobre",
+    techStack: "Tecnologias",
+    projects: "Projetos",
+    contact: "Contato",
+    darkMode: "Modo Escuro",
+
+    myTechStack: "Minhas Tecnologias",
+    techDescription:
+      "Tecnologias com as quais tenho trabalhado ou estudado recentemente",
 
     advanced: "Avançado",
     intermediate: "Intermediário",
     basic: "Básico",
 
-    html: "HTML5",
-    css: "CSS3",
-    javascript: "JavaScript",
-    bootstrap: "Bootstrap",
-    python: "Python",
-    postgresql: "PostgreSQL",
-    github: "GitHub",
-    docker: "Docker"
-  }
+    builtBy: "Desenvolvido por",
+  },
 };
 
-
-const translationsProjects = {
+const translationsProject = {
   en: {
-    pageTitle: "Projects",
+    home: "Home",
+    about: "About",
+    techStack: "Tech Stack",
+    projects: "Projects",
+    contact: "Contact",
+    darkMode: "Dark Mode",
 
-    title: "Projects",
-    subtitle:
-      "Some projects I have completed or am currently working on.",
+    projectsTitle: "Projects",
+    projectsDescription:
+      "Some projects I have completed or am currently working on",
 
     livePreview: "Live Preview",
     viewCode: "View Code",
-    techStack: "Tech stack:",
 
-    serenattoTitle: "Serenatto - Café & Bistro",
+    techStackLabel: "Tech stack:",
+
     serenattoDescription:
       "Landing page for a coffee shop and bistro, built using the Bootstrap framework.",
 
-    portfolioTitle: "New Portfolio",
-    portfolioDescription:
-      "Personal portfolio developed to showcase my projects, skills and professional experience.",
+    meteoraDescription:
+      "Landing page for a Brazilian clothing store, built with Bootstrap.",
 
-    javascriptTitle: "JavaScript Challenge",
-    javascriptDescription:
-      "A collection of JavaScript exercises and challenges developed during my studies.",
+    secretNumberDescription:
+      "A small secret number game created to practice JS and its libraries.",
 
-    jqueryTitle: "ShopMax",
-    jqueryDescription:
-      "A shopping cart project developed to practice JavaScript, jQuery and front-end concepts."
+    pleasantLinktreeDescription:
+      "Linktree-style project featuring key social media links for a programmer's profile.",
+
+    libraryDescription:
+      "Library management system developed in Python, using PostgreSQL to store all data.",
+
+    builtBy: "Built by",
   },
 
   pt: {
-    pageTitle: "Projetos",
+    home: "Início",
+    about: "Sobre",
+    techStack: "Tecnologias",
+    projects: "Projetos",
+    contact: "Contato",
+    darkMode: "Modo Escuro",
 
-    title: "Projetos",
-    subtitle:
-      "Alguns projetos que concluí ou nos quais estou trabalhando atualmente.",
+    projectsTitle: "Projetos",
+    projectsDescription:
+      "Alguns projetos que concluí ou nos quais estou trabalhando atualmente",
 
-    livePreview: "Visualizar Projeto",
+    livePreview: "Visualização",
     viewCode: "Ver Código",
-    techStack: "Tecnologias:",
 
-    serenattoTitle: "Serenatto - Café & Bistrô",
+    techStackLabel: "Tecnologias:",
+
     serenattoDescription:
       "Landing page para uma cafeteria e bistrô, desenvolvida utilizando o framework Bootstrap.",
 
-    portfolioTitle: "Novo Portfólio",
-    portfolioDescription:
-      "Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e experiência profissional.",
+    meteoraDescription:
+      "Landing page para uma loja de roupas brasileira, desenvolvida com Bootstrap.",
 
-    javascriptTitle: "Desafio JavaScript",
-    javascriptDescription:
-      "Uma coleção de exercícios e desafios em JavaScript desenvolvidos durante meus estudos.",
+    secretNumberDescription:
+      "Um pequeno jogo de número secreto criado para praticar JavaScript e suas bibliotecas.",
 
-    jqueryTitle: "ShopMax",
-    jqueryDescription:
-      "Projeto de carrinho de compras desenvolvido para praticar JavaScript, jQuery e conceitos de front-end."
-  }
+    pleasantLinktreeDescription:
+      "Projeto no estilo Linktree com os principais links de redes sociais de um perfil de programador.",
+
+    libraryDescription:
+      "Sistema de gerenciamento de biblioteca desenvolvido em Python, utilizando PostgreSQL para armazenar todos os dados.",
+
+    builtBy: "Desenvolvido por",
+  },
 };
-
 
 const translationsContact = {
   en: {
-    pageTitle: "Contact",
+    home: "Home",
+    about: "About",
+    techStack: "Tech Stack",
+    projects: "Projects",
+    contact: "Contact",
+    darkMode: "Dark Mode",
 
-    title: "Contact Me",
+    getInTouch: "Get in Touch",
 
-    subtitle:
-      "Have a question, proposal or just want to say hello? Feel free to get in touch.",
+    contactDescription:
+      "Have a question, proposal, or just want to say hello? Feel free to send me a message.",
 
-    nameLabel: "Name",
-    namePlaceholder: "Enter your name",
-
-    emailLabel: "Email",
-    emailPlaceholder: "Enter your email",
-
-    messageLabel: "Message",
-    messagePlaceholder: "Write your message here...",
-
-    sendButton: "Send Message",
-
-    contactInfo: "Get in touch",
+    name: "Name",
     email: "Email",
-    location: "Location",
+    subject: "Subject",
+    message: "Message",
 
-    successMessage: "Message sent successfully!",
-    errorMessage:
-      "Something went wrong. Please try again."
+    yourName: "Your name",
+    yourEmail: "your@email.com",
+    subjectPlaceholder: "What would you like to talk about?",
+    messagePlaceholder: "Write your message...",
+
+    sendMessage: "Send Message",
+
+    quickerWay: "Prefer a quicker way?",
+    findMe: "You can also find me on:",
+
+    builtBy: "Built by",
   },
 
   pt: {
-    pageTitle: "Contato",
+    home: "Início",
+    about: "Sobre",
+    techStack: "Tecnologias",
+    projects: "Projetos",
+    contact: "Contato",
+    darkMode: "Modo Escuro",
 
-    title: "Entre em Contato",
+    getInTouch: "Entre em Contato",
 
-    subtitle:
-      "Tem alguma dúvida, proposta ou simplesmente quer dizer olá? Fique à vontade para entrar em contato.",
+    contactDescription:
+      "Tem alguma dúvida, proposta ou apenas quer dizer olá? Fique à vontade para me enviar uma mensagem.",
 
-    nameLabel: "Nome",
-    namePlaceholder: "Digite seu nome",
-
-    emailLabel: "E-mail",
-    emailPlaceholder: "Digite seu e-mail",
-
-    messageLabel: "Mensagem",
-    messagePlaceholder: "Escreva sua mensagem aqui...",
-
-    sendButton: "Enviar Mensagem",
-
-    contactInfo: "Entre em contato",
+    name: "Nome",
     email: "E-mail",
-    location: "Localização",
+    subject: "Assunto",
+    message: "Mensagem",
 
-    successMessage: "Mensagem enviada com sucesso!",
-    errorMessage:
-      "Algo deu errado. Tente novamente."
-  }
+    yourName: "Seu nome",
+    yourEmail: "seu@email.com",
+    subjectPlaceholder: "Sobre o que você gostaria de conversar?",
+    messagePlaceholder: "Escreva sua mensagem...",
+
+    sendMessage: "Enviar Mensagem",
+
+    quickerWay: "Prefere uma maneira mais rápida?",
+    findMe: "Você também pode me encontrar em:",
+
+    builtBy: "Desenvolvido por",
+  },
 };
+
+$(document).ready(function () {
+  const translations = {
+    home: translationsHome,
+    about: translationsAbout,
+    tech: translationsTech,
+    project: translationsProject,
+    contact: translationsContact,
+  };
+
+  function getCurrentPage() {
+    const page = window.location.pathname.split("/").pop().replace(".html", "");
+
+    if (page === "" || page === "index") {
+      return "home";
+    }
+
+    if (page === "about") {
+      return "about";
+    }
+
+    if (page === "tech") {
+      return "tech";
+    }
+
+    if (page === "project") {
+      return "project";
+    }
+
+    if (page === "contact") {
+      return "contact";
+    }
+
+    return "home";
+  }
+
+  function getTranslation(object, path) {
+    return path.split(".").reduce((value, key) => value?.[key], object);
+  }
+
+  function changeLanguage(language) {
+    const currentPage = getCurrentPage();
+
+    const pageTranslations = translations[currentPage];
+
+    if (!pageTranslations) {
+      return;
+    }
+
+    const currentTranslations = pageTranslations[language];
+
+    if (!currentTranslations) {
+      return;
+    }
+
+    /*
+     * TEXTOS NORMAIS
+     *
+     * Exemplo:
+     *
+     * data-i18n="project.livePreview"
+     *
+     * será convertido para:
+     *
+     * translationsProject[language].livePreview
+     */
+
+    $("[data-i18n]").each(function () {
+      const key = $(this).data("i18n");
+
+      let translation = getTranslation(currentTranslations, key);
+
+      /*
+       * Caso a chave tenha o prefixo da página,
+       * removemos o prefixo.
+       *
+       * Exemplo:
+       *
+       * project.livePreview
+       *
+       * vira:
+       *
+       * livePreview
+       */
+
+      if (!translation && key.includes(".")) {
+        const keyWithoutPage = key.split(".").slice(1).join(".");
+
+        translation = getTranslation(currentTranslations, keyWithoutPage);
+      }
+
+      if (translation !== undefined) {
+        $(this).text(translation);
+      }
+    });
+
+    /*
+     * PLACEHOLDERS
+     */
+
+    $("[data-i18n-placeholder]").each(function () {
+      const key = $(this).data("i18n-placeholder");
+
+      let translation = getTranslation(currentTranslations, key);
+
+      if (!translation && key.includes(".")) {
+        const keyWithoutPage = key.split(".").slice(1).join(".");
+
+        translation = getTranslation(currentTranslations, keyWithoutPage);
+      }
+
+      if (translation !== undefined) {
+        $(this).attr("placeholder", translation);
+      }
+    });
+
+    /*
+     * ATUALIZA O IDIOMA EXIBIDO NO BOTÃO
+     */
+
+    $("#current-language").text(language === "pt" ? "PT" : "EN");
+
+    /*
+     * SALVA O IDIOMA
+     */
+
+    localStorage.setItem("language", language);
+  }
+
+  /*
+   * RECUPERA O IDIOMA SALVO
+   */
+
+  const savedLanguage = localStorage.getItem("language") || "en";
+
+  changeLanguage(savedLanguage);
+
+  /*
+   * TROCA DE IDIOMA
+   */
+
+  $(".language-option").click(function (event) {
+    event.preventDefault();
+
+    const language = $(this).data("language");
+
+    changeLanguage(language);
+  });
+});
