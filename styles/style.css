@@ -120,8 +120,8 @@ footer {
   box-shadow: none;
 }
 
-.btn.dropdown-toggle {
-   margin-bottom: 0.125rem;
+.dropdown > .btn {
+   margin-bottom: 0.2rem;
 }
 
 #current-language {
@@ -431,6 +431,14 @@ footer .name {
 @media (max-width: 850px) {
   .nav-link {
     font-size: 18px;
+  }
+
+  #current-language {
+    font-size: 18px;
+  }
+
+  .form-check{
+    margin-bottom: 0;
   }
 
   .presentation {
